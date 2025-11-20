@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Stanford Medical & Diagnostic Clinic, Inc.  
 ### Website Project (HTML • CSS • JavaScript • PHP • Bootstrap)
 
@@ -29,3 +30,6 @@ It is a single-page responsive website built using **Bootstrap**, **HTML5**, **C
 
 ## 📁 Project Structure
 
+=======
+# stanfordlaboratory
+>>>>>>> 8dc52851116ec456956142002d7c483f8716d802
