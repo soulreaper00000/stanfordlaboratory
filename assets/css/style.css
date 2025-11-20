@@ -1,0 +1,161 @@
+body {
+    scroll-behavior: smooth;
+}
+
+.hero-section {
+    height: 100vh;
+    background: url('../img/microscope.jpg') center/cover no-repeat;
+    padding-top: 80px;
+}
+#about img {
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to   { opacity: 1; transform: scale(1); }
+}
+/* Background colors */
+.mission-box {
+    background: #d9534f; /* red-orange */
+}
+
+.core-box {
+    background: #6c757d; /* gray */
+}
+
+.slogan-box {
+    background: #5a6e7f; /* muted blue-gray */
+}
+
+/* Large faded number background */
+.info-box .info-number {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 80px;
+    font-weight: bold;
+    opacity: 0.15;
+    color: #fff;
+    pointer-events: none;
+    user-select: none;
+    line-height: 1;
+}
+
+.nav-link {
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    color: #ffd700 !important;
+}
+/* Service card hover animation */
+.service-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Arrow Bullet Style */
+.services-list,
+.services-list li {
+    list-style: none !important;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    padding: 0;
+}
+.services-list i {
+    font-size: 1.1rem;
+}
+
+.services-list li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.services-list li::before {
+    content: "➜";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 18px;
+    color: #0d6efd;
+    font-weight: bold;
+}
+
+/* Compress the overall section padding */
+#services {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Make cards more compact */
+#services .card-body {
+    padding: 10px 15px;
+}
+
+/* Reduce spacing between service columns */
+#services .row > div {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Compress list items */
+#services .services-list li {
+    font-size: 1.0rem;
+    margin-bottom: 4px; /* reduced spacing */
+}
+
+/* Reduce icon margin */
+#services .services-list i {
+    margin-right: 6px !important;
+}
+
+/* Compress card headers */
+#services .card-header {
+    padding: 5px 10px;
+    font-size: 1.7rem;
+}
+
+/* Reduce header title size */
+#services h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+
+.iso-slider-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 70%;
+    aspect-ratio: 1 / 1; /* Ensures visible height */
+    border: 5px solid #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: auto;
+    background: #fff; /* fallback */
+}
+
+.iso-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* prevent squishing */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.iso-slide.active {
+    opacity: 1;
+}
+
+
+
+
